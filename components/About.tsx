@@ -33,28 +33,29 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-        md:rounded-lg md:w-56 md:h-64 xl:w-[250px] xl:h-[300px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-16 h-16 rounded-full object-cover
+        md:rounded-lg md:w-32 md:h-32 xl:w-[200px] xl:h-[250px]"
         alt="profile pic"
       />
 
-      <div className="space-y-10 px-8 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-3 px-6 md:px-10">
+        <h4 className="text-2xl font-semibold">
           Uma breve{" "}
           <span className="underline decoration-[#1f4b99]/50">introdução</span>
         </h4>
-        <p className="text-lg">
+        <p>
           {" "}
           Olá, sou Rennan, desenvolvedor web especializado em tecnologias
           front-end, como React e Next. Autodidata apaixonado por tecnologia, me
-          interessei pela área de programação desde cedo com meu primeiro acesso
-          a internet, onde vi o básico de C++ e lógica de programção. Busquei me
-          aprofundar em HTML e CSS durante o tempo livre, logo descobri o
+          interessei pela área da programação desde cedo com meu primeiro acesso
+          a internet, onde vi o básico de C++ e lógica de programação. Busquei
+          me aprofundar em HTML e CSS durante o tempo livre, logo descobri o
           JavaScript, e sempre que possivel pescava algum conhecimento online,
           tanto no youtube quanto em plataformas como a{" "}
           <a
             className="text-green-500 font-semibold underline hover:text-green-800"
             href="https://www.w3profile.com/RennanSilva"
+            rel="noreferrer"
             target="_blank"
           >
             W3SCHOOLS
@@ -64,6 +65,7 @@ function About({}: Props) {
           <a
             href="https://b7web.com.br/"
             target="_blank"
+            rel="noreferrer"
             className="text-blue-800 font-semibold underline hover:text-blue-900"
           >
             B7WEB
@@ -72,6 +74,7 @@ function About({}: Props) {
           <a
             href="https://www.scaler.com/academy/"
             target="_blank"
+            rel="noreferrer"
             className="text-pink-600 font-semibold underline hover:text-pink-800"
           >
             SCALER

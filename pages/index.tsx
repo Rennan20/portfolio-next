@@ -19,7 +19,7 @@ const Home = ({}: Props) => {
     "
     >
       <Head>
-        <title>Rennan's Portfolio</title>
+        <title>Rennan&apos;s Portfolio</title>
       </Head>
       {/* Header */}
       <Header />
@@ -46,7 +46,7 @@ const Home = ({}: Props) => {
         <Contact />
       </section>
 
-      <Link href="#hero">
+      <Link href="#hero" passHref>
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <HomeIcon className="h-5 w-5 animate-pulse" />
