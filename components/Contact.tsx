@@ -22,9 +22,13 @@ function Contact({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
+
       <h4 className="text-2xl font-semibold text-center">
         Eu tenho tudo que você precisa.
-        <span className="decoration-[red]/50 underline">Entre em contato.</span>
+        <span className="decoration-[red]/50 underline">
+          {" "}
+          Entre em contato.
+        </span>
       </h4>
 
       <div className="flex flex-col space-y-10">

@@ -1,15 +1,12 @@
 @media screen and (max-width: 360px) and (max-height: 760px) {
+  img[src="/about-pic.jpg"] {
+    display: none;
+  }
   h4 {
     display: none;
   }
-
-  img[src="https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.6435-9/204137399_4085602471509432_9170933146261212015_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=9nPP2cjLNk0AX870Lr-&_nc_ht=scontent.fjdo1-1.fna&oh=00_AfCYyCEwRlVGIQUyeT_KcXGmy1vQfgxlEnoJX65QXfbbHA&oe=6414699B"]
-  {
-    display: none;
-  }
-
   p {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
@@ -17,10 +14,22 @@
   .contactInput {
     width: 100%;
   }
+  h5 {
+    display: none;
+  }
   h4 {
     display: none;
   }
   form {
     max-width: 100%;
+  }
+  header {
+    padding: 18px;
+  }
+
+  .heroButton {
+    font-size: 12px;
+    padding: 6px 8px;
+    margin-right: 1px;
   }
 }

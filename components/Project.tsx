@@ -11,22 +11,21 @@ export type ProjectType = {
 export const projects: ProjectType[] = [
   {
     id: 1,
+    src: "/landing-page-desktop-removebg-preview.png",
+    alt: "Landing-page",
+    name: "Portfólio",
+    description: "Portfólio de programação customizavél",
+    link: "https://next-portfolio-template-rho.vercel.app/",
+    type: 1,
+  },
+  {
+    id: 2,
     src: "/portfolio-desktop-removebg-preview.png",
     alt: "Portfolio",
     name: "Landing Page",
     description:
       "Meu primeiro portfólio, lá estão vários projetos mais básicos e é um bom comparativo da minha evolução!",
     link: "https://rennan20.github.io/meu-portfolio/",
-    type: 1,
-  },
-  {
-    id: 2,
-    src: "/extense-desktop-removebg-preview.png",
-    alt: "Gerenciador Financeiro",
-    name: "Manager",
-    description:
-      "Aplicativo onde o usuário pode fazer o gerenciamento dos seus gastos e calcular o total no mês, feito com React",
-    link: "https://expense-manager-beryl.vercel.app/",
     type: 2,
   },
   {
@@ -80,12 +79,12 @@ export const projects: ProjectType[] = [
   },
   {
     id: 8,
-    src: "/mks-desktop-removebg-preview.png",
-    alt: "E-commerce",
-    name: "E-commerce",
+    src: "/extense-desktop-removebg-preview.png",
+    alt: "Gerenciador Financeiro",
+    name: "Manager",
     description:
-      "Site de comércio digital usando API da MKSSistemas, o site possui carrinho de compras e validação de pagamento",
-    link: "https://mks-loja-teste.vercel.app/",
+      "Aplicativo onde o usuário pode fazer o gerenciamento dos seus gastos e calcular o total no mês, feito com React",
+    link: "https://expense-manager-beryl.vercel.app/",
     type: 8,
   },
 ];

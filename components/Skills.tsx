@@ -33,6 +33,7 @@ function Skills() {
             </motion.div>
           </motion.div>
         ))}
+        <div className="w-full absolute top-[30%] bg-[#1f4b99]/10 left-0 h-[500px] -skew-y-12"></div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.6435-9/204137399_4085602471509432_9170933146261212015_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=9nPP2cjLNk0AX870Lr-&_nc_ht=scontent.fjdo1-1.fna&oh=00_AfCYyCEwRlVGIQUyeT_KcXGmy1vQfgxlEnoJX65QXfbbHA&oe=6414699B
 type Props = {};
 
 function About({}: Props) {
@@ -18,7 +17,7 @@ function About({}: Props) {
       </h3>
 
       <motion.img
-        src="https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.6435-9/204137399_4085602471509432_9170933146261212015_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=9nPP2cjLNk0AX870Lr-&_nc_ht=scontent.fjdo1-1.fna&oh=00_AfCYyCEwRlVGIQUyeT_KcXGmy1vQfgxlEnoJX65QXfbbHA&oe=6414699B"
+        src="about-pic.jpg"
         initial={{
           x: -200,
           opacity: 0,
