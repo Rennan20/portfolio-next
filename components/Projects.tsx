@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { projects, ProjectType } from "./Project";
+import { projects } from "./Project";
+import { ProjectType } from "@/typing";
 
 type Props = {};
 

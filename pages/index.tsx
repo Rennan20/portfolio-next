@@ -8,6 +8,8 @@ import Contact from "@/components/Contact";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
+import ProjectSlider from "@/components/ProjectSlider";
+import { projects } from "@/components/Project";
 
 const inter = Inter({ subsets: ["latin"] });
 type Props = {};
@@ -45,6 +47,10 @@ const Home = ({}: Props) => {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+
+      {/*    <section className={`snap-start`}>
+        <ProjectSlider projects={projects} />
+      </section> */}
 
       <Link href="#hero" passHref>
         <footer className="sticky bottom-5 w-full cursor-pointer">
