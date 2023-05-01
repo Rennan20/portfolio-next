@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { projects } from "./Project";
 import { ProjectType } from "@/typing";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,7 +19,11 @@ function Projects({}: Props) {
         >
           {project1 && (
             <div key={project1.id}>
-              <a href={project1.link} target="_blank" rel="noopener noreferrer">
+              <Link
+                href={project1.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <motion.img
                   style={{
                     width: "100%",
@@ -33,7 +38,7 @@ function Projects({}: Props) {
                   src={project1.src}
                   alt="Project screenshot"
                 />
-              </a>
+              </Link>
               <div className="space-y-5  px-0 md:px-10 max-w-6xl">
                 <h4 className="underline decoration-[red]/50 text-2xl md:text-4xl font-semibold text-center">
                   {project1.name}
@@ -46,7 +51,11 @@ function Projects({}: Props) {
           )}
           {project2 && (
             <div key={project2.id}>
-              <a href={project2.link} target="_blank" rel="noopener noreferrer">
+              <Link
+                href={project2.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <motion.img
                   style={{
                     width: "100%",
@@ -61,7 +70,7 @@ function Projects({}: Props) {
                   src={project2.src}
                   alt="Project screenshot"
                 />
-              </a>
+              </Link>
               <div className="space-y-5 px-0 md:px-10 max-w-6xl ">
                 <h4 className="underline decoration-[red]/50 text-2xl md:text-4xl font-semibold text-center">
                   {project2.name}

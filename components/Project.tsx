@@ -3,7 +3,8 @@ import { ProjectType } from "@/typing";
 export const projects: ProjectType[] = [
   {
     id: 1,
-    src: "/landing-page-desktop-removebg-preview.png",
+    /* src: "/landing-page-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/hubBoDI.png",
     alt: "Landing-page",
     name: "Template Portfólio",
     description: "Portfólio de programação customizavél",
@@ -12,7 +13,8 @@ export const projects: ProjectType[] = [
   },
   {
     id: 2,
-    src: "/recipes-site-desktop-removebg-preview.png",
+    /*   src: "/recipes-site-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/KXZAel9.png",
     alt: "Recipes-site",
     name: "Site de Receitas",
     description: "Template de um site de receitas",
@@ -21,7 +23,8 @@ export const projects: ProjectType[] = [
   },
   {
     id: 3,
-    src: "/portfolio-desktop-removebg-preview.png",
+    /*     src: "/portfolio-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/0kbw5Ep.png",
     alt: "Portfolio",
     name: "Portfólio",
     description:
@@ -31,7 +34,7 @@ export const projects: ProjectType[] = [
   },
   {
     id: 4,
-    src: "/calc-desktop-removebg-preview.png",
+    src: "https://i.imgur.com/rz9fUdf.png",
     alt: "Calculadora IMC",
     name: "Calculadora IMC",
     description: "Calculadora de IMC simples feita em React com Vite.",
@@ -40,7 +43,8 @@ export const projects: ProjectType[] = [
   },
   {
     id: 5,
-    src: "/rpg-desktop-removebg-preview.png",
+    /*   src: "/rpg-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/CJci8qK.png",
     alt: "RPG",
     name: "Mini RPG",
     description:
@@ -50,7 +54,8 @@ export const projects: ProjectType[] = [
   },
   {
     id: 6,
-    src: "/nft-desktop-removebg-preview.png",
+    /*  src: "/nft-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/6Pi9w4k.png",
     alt: "NFT Droper",
     name: "NFT Droper",
     description:
@@ -60,7 +65,8 @@ export const projects: ProjectType[] = [
   },
   {
     id: 7,
-    src: "/chat-desktop-removebg-preview.png",
+    /*  src: "/chat-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/EQH5IAg.png",
     alt: "ChatGPT",
     name: "Clone ChatGPT",
     description:
@@ -70,7 +76,9 @@ export const projects: ProjectType[] = [
   },
   {
     id: 8,
-    src: "/netflix-desktop-removebg-preview.png",
+    /*  src: "/netflix-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/9yKXCOX.png",
+
     alt: "Clone Netflix",
     name: "Clone Netflix",
     description:
@@ -80,7 +88,7 @@ export const projects: ProjectType[] = [
   },
   {
     id: 9,
-    src: "/extense-desktop-removebg-preview.png",
+    src: "https://i.imgur.com/qUco6UV.png",
     alt: "Gerenciador Financeiro",
     name: "Manager",
     description:

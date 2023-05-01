@@ -17,7 +17,8 @@ function About({}: Props) {
       </h3>
 
       <motion.img
-        src="about-pic.jpg"
+        /*     src="about-pic.jpg" */
+        src="https://i.imgur.com/2xyYnFx.jpg"
         initial={{
           x: -200,
           opacity: 0,
