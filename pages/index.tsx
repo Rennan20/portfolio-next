@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
+import Templates from "@/components/Templates";
 
 const inter = Inter({ subsets: ["latin"] });
 type Props = {};
@@ -35,6 +36,11 @@ const Home = ({}: Props) => {
       {/* Skills */}
       <section id="skills" className="snap-start">
         <Skills />
+      </section>
+
+      {/* Templates */}
+      <section id="templates" className="snap-start">
+        <Templates />
       </section>
 
       {/* Projects */}
