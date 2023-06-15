@@ -31,8 +31,19 @@ export const templates: ProjectType[] = [
     link: "https://barber-shop-sigma.vercel.app/",
     type: 3,
   },
+  /*https://i.imgur.com/rEa6fc5.png*/
   {
     id: 4,
+    /*   src: "/recipes-site-desktop-removebg-preview.png", */
+    src: "https://i.imgur.com/rEa6fc5.png",
+    alt: "landing page",
+    name: "Landing Page",
+    description: "Landin Pages de aulas online",
+    link: "https://landing-page-aulas.vercel.app/",
+    type: 4,
+  },
+  {
+    id: 5,
     /*   src: "/recipes-site-desktop-removebg-preview.png", */
     src: "https://i.imgur.com/xGmSfb7.png",
     alt: "eletronics",
@@ -40,21 +51,21 @@ export const templates: ProjectType[] = [
     description:
       "Template de divulgação de um e-commerce de produtos eletrônicos",
     link: "https://eletronics-shop.vercel.app/",
-    type: 4,
+    type: 5,
   },
   {
-    id: 5,
+    id: 6,
     /*   src: "/recipes-site-desktop-removebg-preview.png", */
     src: "https://i.imgur.com/UjWV1vb.png",
     alt: "portfólio",
     name: "Landing Page Advogado",
     description: "Template de um site de divulgação da área de advocacia",
     link: "https://advogado-landing-page-seven.vercel.app/",
-    type: 5,
+    type: 6,
   },
 
   {
-    id: 6,
+    id: 7,
     /*   src: "/recipes-site-desktop-removebg-preview.png", */
     src: "https://i.imgur.com/ZEFovSB.png",
     alt: "portfólio",
@@ -62,7 +73,7 @@ export const templates: ProjectType[] = [
     description:
       "Template de um site de divulgação da área de marketing digital",
     link: "https://portfolio-canva.vercel.app/",
-    type: 6,
+    type: 7,
   },
 
   /* https://i.imgur.com/iJvPW9q.png */
