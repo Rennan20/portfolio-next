@@ -12,10 +12,10 @@ export const templates: ProjectType[] = [
   },
   {
     id: 1,
-    src: " https://i.imgur.com/LIw8zZK.png",
+    src: " https://i.imgur.com/XlhmxBs.png",
     alt: "e-book",
     name: "Landing Page E-book",
-    description: "Landing page do meu e-book HTML&CSS Básico Simplificado",
+    description: "Landing page do meu e-book Guia FrontEnd",
     link: "https://e-book-lovat.vercel.app/",
     type: 1,
   },
