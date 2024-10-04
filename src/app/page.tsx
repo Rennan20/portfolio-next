@@ -1,28 +1,20 @@
-import { Inter } from "@next/font/google";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
-import Head from "next/head";
-import Templates from "@/components/Templates";
+import { Header } from "@/components/Header";
+import { Hero } from "@/templates/Hero";
+import { About } from "@/templates/About";
+import Contact from "@/templates/Contact";
+import { Projects } from "@/templates/Projects";
+import { Templates } from "@/templates/Templates";
+import { Skills } from "@/templates/Skills";
 
-const inter = Inter({ subsets: ["latin"] });
-type Props = {};
-const Home = ({}: Props) => {
+export default function Home() {
   return (
     <div
       className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0
     overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1f4b99]/80
     "
     >
-      <Head>
-        <title>Rennan&apos;s Portfolio</title>
-      </Head>
-      {/* Header */}
       <Header />
 
       {/* Hero */}
@@ -61,5 +53,4 @@ const Home = ({}: Props) => {
       </Link>
     </div>
   );
-};
-export default Home;
+}

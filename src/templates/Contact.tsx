@@ -1,16 +1,11 @@
+"use client";
+
 import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Inputs } from "../../typing";
 
-type Props = {};
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
-
-function Contact({}: Props) {
+export const Contact = () => {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     /* window.location.href = */ `
@@ -18,33 +13,30 @@ function Contact({}: Props) {
  ${formData.message} (${formData.email})`;
   };
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-[2.5rem] justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Contact
+        Contato
       </h3>
 
       <h4 className="text-2xl font-semibold text-center">
         Eu tenho tudo que você precisa.
-        <span className="decoration-[red]/50 underline">
-          {" "}
-          Entre em contato.
-        </span>
+        <span className="decoration-[red]/50 underline">Entre em contato.</span>
       </h4>
 
       <div className="flex flex-col space-y-10">
         <div className="space-y-8">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="h-7 w-7 animate-pulse" />
+            <PhoneIcon className="size-7 animate-pulse" />
             <p className="text-1xl">+55 (88) 996080529</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="h-7 w-7 animate-pulse" />
+            <MapPinIcon className="size-7 animate-pulse" />
             <p className="text-1xl">Limoeiro do Norte, CE - Brazil</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="size-7 animate-pulse" />
             <p className="text-1xl">jrennan99@gmail.com</p>
           </div>
         </div>
@@ -90,6 +82,6 @@ function Contact({}: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;

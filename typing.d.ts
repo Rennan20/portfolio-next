@@ -7,3 +7,5 @@ export type ProjectType = {
   link: string;
   type: number;
 };
+
+export type Inputs = Record<"name" | "email" | "subject" | "message", string>;

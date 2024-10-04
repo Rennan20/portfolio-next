@@ -1,9 +1,9 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-function About({}: Props) {
+export const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,7 +13,7 @@ function About({}: Props) {
   max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        About
+        Sobre mim
       </h3>
 
       <motion.img
@@ -33,7 +33,7 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-16 h-16 rounded-full object-cover
+        className="-mb-20 md:mb-0 flex-shrink-0 size-16 rounded-full object-cover
         md:rounded-lg md:w-32 md:h-32 xl:w-[200px] xl:h-[250px]"
         alt="profile pic"
       />
@@ -109,6 +109,4 @@ function About({}: Props) {
       </div>
     </motion.div>
   );
-}
-
-export default About;
+};

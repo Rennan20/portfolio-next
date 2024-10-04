@@ -1,12 +1,11 @@
-import React from "react";
+"use client";
+
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from "@/components/BackgroundCircles";
+import { BackgroundCircles } from "@/components/BackgroundCircles";
 import Link from "next/link";
 
-type Props = {};
-
-export default function Hero({}: Props) {
+export const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
       `Hi, The Name's Rennan Silva`,
@@ -23,30 +22,30 @@ export default function Hero({}: Props) {
         alt="/profile pic.jpg"
         width={128}
         height={128}
-        className="relative h-32 w-32 mx-auto rounded-full object-cover"
+        className="relative size-32 mx-auto rounded-full object-cover"
         src="https://i.imgur.com/FOt7eko.jpg"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]"></h2>
-        <h1 className="text-4xl lg:text-4xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#1f4b99" />{" "}
+        <h2 className="text-sm uppercase text-gray-500 pb-[0.5rem] tracking-[0.938rem]"></h2>
+        <h1 className="text-4xl font-semibold px-[2.5rem]">
+          <span className="mr-[0.75rem]">{text}</span>
+          <Cursor cursorColor="#1f4b99" />
         </h1>
-        <div className="pt-5">
+        <div className="pt-[1.25rem]">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton">Sobre</button>
           </Link>
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button className="heroButton">Stack</button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton">Projects</button>
+            <button className="heroButton">Projetos</button>
           </Link>
           <Link href="#contact">
-            <button className="heroButton">Contact</button>
+            <button className="heroButton">Contato</button>
           </Link>
         </div>
       </div>
     </div>
   );
-}
+};

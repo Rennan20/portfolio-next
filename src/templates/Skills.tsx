@@ -1,13 +1,15 @@
-import { motion } from "framer-motion";
-import { skills } from "./Skill";
+"use client";
 
-function Skills() {
+import { motion } from "framer-motion";
+import { skills } from "../components/Skill";
+
+export const Skills = () => {
   return (
     <div className="flex flex-col items-center space-y-10 h-screen relative overflow-hidden text-left md:flex-row max-w-full justify-evenly mx-auto  z-0">
       <h2 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         My Skills
       </h2>
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid grid-cols-4 gap-4">
         {skills.map((skill) => (
           <motion.div
             key={skill.id}
@@ -37,6 +39,4 @@ function Skills() {
       </div>
     </div>
   );
-}
-
-export default Skills;
+};

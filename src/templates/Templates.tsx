@@ -1,12 +1,12 @@
+"use client";
+
 import { motion } from "framer-motion";
 import React from "react";
-import { templates } from "./Template";
-import { ProjectType } from "@/typing";
+import { templates } from "../components/Template";
 import Link from "next/link";
+import { ProjectType } from "../../typing";
 
-type Props = {};
-
-function Templates({}: Props) {
+export const Templates = () => {
   const renderProjects = (templates: ProjectType[]) => {
     const rows = [];
     for (let i = 0; i < templates.length; i += 2) {
@@ -39,7 +39,7 @@ function Templates({}: Props) {
                   alt="Project screenshot"
                 />
               </Link>
-              <div className="space-y-5  px-0 md:px-10 max-w-6xl">
+              <div className="space-y-5 px-0 md:px-10 max-w-6xl">
                 <h4 className="underline decoration-[red]/50 text-2xl md:text-4xl font-semibold text-center">
                   {template1.name}
                 </h4>
@@ -71,7 +71,7 @@ function Templates({}: Props) {
                   alt="Project screenshot"
                 />
               </Link>
-              <div className="space-y-5 px-0 md:px-10 max-w-6xl ">
+              <div className="space-y-5 px-0 md:px-10 max-w-6xl">
                 <h4 className="underline decoration-[red]/50 text-2xl md:text-4xl font-semibold text-center">
                   {template2.name}
                 </h4>
@@ -112,6 +112,4 @@ function Templates({}: Props) {
       <div className="w-full absolute top-[30%] bg-[#8d991f]/10 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
-}
-
-export default Templates;
+};
