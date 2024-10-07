@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import { RepositoryProjects } from "@/repositories/RepositoryProjects";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { ProjectCard } from "@/components/ProjectCard";
 
 import "swiper/css";
