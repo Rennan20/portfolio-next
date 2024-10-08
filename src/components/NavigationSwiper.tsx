@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
+import { Swiper as SwiperInstance } from 'swiper';
 type NavigationButtonsProps = {
-  sliderRef: React.RefObject<any>;
+  sliderRef: React.RefObject<{ swiper: SwiperInstance }>;
   realIndex: number;
   setRealIndex: React.Dispatch<React.SetStateAction<number>>;
   isEnd: boolean;
   setIsEnd: React.Dispatch<React.SetStateAction<boolean>>;
 };
-
 export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
   sliderRef,
   realIndex,
@@ -26,8 +26,8 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
             setIsEnd(sliderRef.current.swiper.isEnd);
           }
         }}
-        className={`absolute top-1/2 left-2 transform -translate-y-1/2 p-2 rounded-full cursor-pointer z-10 text-white text-xl ${
-          realIndex === 0 ? "cursor-not-allowed" : ""
+        className={`absolute left-2 top-1/2 z-10 -translate-y-1/2 transform cursor-pointer rounded-full p-2 text-xl text-white ${
+          realIndex === 0 ? 'cursor-not-allowed' : ''
         }`}
       >
         ←
@@ -42,8 +42,8 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
             setIsEnd(sliderRef.current.swiper.isEnd);
           }
         }}
-        className={`absolute top-1/2 right-2 transform -translate-y-1/2 p-2 rounded-full cursor-pointer z-10 text-white ${
-          isEnd ? "cursor-not-allowed" : ""
+        className={`absolute right-2 top-1/2 z-10 -translate-y-1/2 transform cursor-pointer rounded-full p-2 text-white ${
+          isEnd ? 'cursor-not-allowed' : ''
         }`}
       >
         →

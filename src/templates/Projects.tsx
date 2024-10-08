@@ -1,21 +1,22 @@
-"use client";
+'use client';
 
-import React, { useRef, useState } from "react";
-import { RepositoryProjects } from "@/repositories/RepositoryProjects";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import { ProjectCard } from "@/components/ProjectCard";
+import { useRef, useState } from 'react';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import { NavigationButtons } from "@/components/NavigationSwiper";
+import { NavigationButtons } from '@/components/NavigationSwiper';
+import { ProjectCard } from '@/components/ProjectCard';
+import { RepositoryProjects } from '@/repositories/RepositoryProjects';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 export const Projects = () => {
   const { data: projects, isLoading, isError } = RepositoryProjects();
 
-  const sliderRef = useRef<any>(null);
+  const sliderRef = useRef<SwiperRef>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const [realIndex, setRealIndex] = useState(0);
@@ -27,11 +28,11 @@ export const Projects = () => {
   if (!projects) return <p>Nenhum projeto disponível.</p>;
 
   return (
-    <div className="h-screen relative flex overflow-hidden flex-col text-left max-w-full justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl font-roboto">
+    <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'>
+      <h3 className='font-roboto absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         Projetos
       </h3>
-      <p className="absolute top-36 uppercase text-white text-sm font-fira">
+      <p className='font-fira absolute top-36 text-sm uppercase text-white'>
         Navegue por uma seleção dos meus melhores projetos
       </p>
       <Swiper
@@ -62,7 +63,7 @@ export const Projects = () => {
             slidesPerView: 2,
           },
         }}
-        className="w-full items-center"
+        className='w-full items-center'
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
@@ -77,7 +78,7 @@ export const Projects = () => {
         isEnd={isEnd}
         setIsEnd={setIsEnd}
       />
-      <div className="w-full absolute top-[30%] bg-[#1f4b99]/10 left-0 h-[500px] -skew-y-12"></div>
+      <div className='absolute left-0 top-[30%] h-[500px] w-full -skew-y-12 bg-[#1f4b99]/10'></div>
     </div>
   );
 };

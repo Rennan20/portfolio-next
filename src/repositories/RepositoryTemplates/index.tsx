@@ -1,10 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
-import { ProjectType } from "../../../typing";
-import { getTemplates } from "@/services/templates";
+import { getTemplates } from '@/services/templates';
+import { useQuery } from '@tanstack/react-query';
+
+import { ProjectType } from '../../../typing';
 
 export const RepositoryTemplates = () => {
   const { data, refetch, isError, isLoading } = useQuery<ProjectType[]>({
-    queryKey: ["templates"],
+    queryKey: ['templates'],
     queryFn: () => getTemplates(),
   });
 
