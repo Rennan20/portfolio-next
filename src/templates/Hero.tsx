@@ -19,11 +19,11 @@ export const Hero = () => {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        alt="/profile pic.jpg"
+        alt="foto de rennan"
         width={128}
         height={128}
         className="relative size-32 mx-auto rounded-full object-cover"
-        src="https://i.imgur.com/FOt7eko.jpg"
+        src="/profile-pic.jpg"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-[0.5rem] tracking-[0.938rem]"></h2>

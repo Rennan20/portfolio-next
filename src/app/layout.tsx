@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Portfólio de Rennan Silva",
   icons: {
     icon: ["/assets/favicon/favicon.ico"],
-    apple: ["/assets/favicon/apple-touch-icon.png?v=4"],
+    apple: ["/assets/favicon/apple-touch-icon.png"],
     shortcut: ["/assets/favicon/apple-touch-icon.png"],
   },
 };
