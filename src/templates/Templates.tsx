@@ -39,7 +39,7 @@ export const Templates = () => {
       </p>
 
       <Swiper
-        ref={sliderRef} // Usando o SwiperRef corrigido aqui
+        ref={sliderRef}
         spaceBetween={30}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
@@ -75,7 +75,7 @@ export const Templates = () => {
         ))}
       </Swiper>
       <NavigationButtons
-        sliderRef={sliderRef as React.RefObject<{ swiper: SwiperClass }>} // Cast para o tipo correto
+        sliderRef={sliderRef as React.RefObject<{ swiper: SwiperClass }>}
         realIndex={realIndex}
         setRealIndex={setRealIndex}
         isEnd={isEnd}
