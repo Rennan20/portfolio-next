@@ -8,7 +8,7 @@ type SkillType = {
 export const skills: SkillType[] = [
   {
     id: 1,
-    src: '/vs-code.png',
+    src: '/vs-code-logo.png',
     alt: 'VSCode',
     description:
       'Editor de código preferido, usado para desenvolver todos os meus projetos com extensões customizadas.',
