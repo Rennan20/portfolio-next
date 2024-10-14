@@ -8,7 +8,7 @@ import { SocialIcon } from './SocialIcon';
 
 export const Header = () => {
   return (
-    <header className='sticky top-0 z-20 mx-auto flex max-w-7xl items-start justify-between p-[1.25rem] xl:items-center'>
+    <header className='sticky top-2 z-20 mx-auto flex max-w-7xl items-start justify-between xl:items-center'>
       <div className='flex flex-row items-center'>
         <SocialIcon
           url='https://www.instagram.com/r_ennan_silva/'
@@ -26,8 +26,8 @@ export const Header = () => {
       </div>
 
       <Link href='#contact' passHref>
-        <div className='animate-slideInLeft flex cursor-pointer flex-row items-center space-x-2 text-gray-300 delay-200'>
-          <Icon.Mail />
+        <div className='flex cursor-pointer flex-row items-center space-x-2 text-gray-300'>
+          <Icon.Mail className='h-6 w-6 text-gray-400' />
           <p className='hidden text-sm uppercase text-gray-400 md:inline-flex'>
             Entre em Contato!
           </p>

@@ -29,10 +29,10 @@ export const Projects = () => {
 
   return (
     <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'>
-      <h3 className='font-roboto absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
+      <h3 className='font-roboto absolute top-24 px-2 text-2xl uppercase tracking-[20px] text-gray-500'>
         Projetos
       </h3>
-      <p className='font-fira absolute top-36 text-sm uppercase text-white'>
+      <p className='font-fira absolute top-36 px-2 text-sm uppercase text-white'>
         Navegue por uma seleção dos meus melhores projetos
       </p>
       <Swiper

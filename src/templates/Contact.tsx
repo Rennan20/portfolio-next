@@ -16,11 +16,11 @@ export const Contact = () => {
   };
   return (
     <div className='relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-[2.5rem] text-center md:flex-row md:text-left'>
-      <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
+      <h3 className='absolute top-24 hidden text-2xl uppercase tracking-[20px] text-gray-500 lg:block'>
         Contato
       </h3>
 
-      <h4 className='text-center text-2xl font-semibold'>
+      <h4 className='hidden text-center text-2xl font-semibold md:block'>
         Eu tenho tudo que você precisa.
         <span className='underline decoration-[red]/50'>Entre em contato.</span>
       </h4>
@@ -47,7 +47,7 @@ export const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           className='mx-auto flex w-fit flex-col space-y-2'
         >
-          <div className='flex space-x-2'>
+          <div className='flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0'>
             <input
               {...register('name')}
               placeholder='Name'
