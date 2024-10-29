@@ -26,27 +26,21 @@ export default async function Home({ params }: Props) {
       overflow-x-hidden overflow-y-scroll bg-[rgb(36,36,36)] text-white'
       >
         <Header />
-        {/* Hero */}
         <section id='hero' className='snap-start'>
           <Hero />
         </section>
-        {/* About */}
         <section id='about' className='snap-center'>
           <About />
         </section>
-        {/* Skills */}
         <section id='skills' className='snap-start'>
           <Skills />
         </section>
-        {/* Templates */}
         <section id='templates' className='snap-start'>
           <Templates />
         </section>
-        {/* Projects */}
         <section id='projects' className='snap-start'>
           <Projects />
         </section>
-        {/* Contact Me */}
         <section id='contact' className='snap-start'>
           <Contact />
         </section>

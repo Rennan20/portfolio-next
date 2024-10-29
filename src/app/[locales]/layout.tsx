@@ -4,9 +4,11 @@ import '@/styles/globals.css';
 
 import { QueryProvider } from '@/providers/query';
 
+import i18nConfig from '../../../i18nConfig';
 import { poppins, montserrat, manrope, barlow } from '../../theme/customFonts';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.metadataUrl!),
   title: {
     default: 'Portfólio',
     template: 'Portfólio | Rennan Silva',
@@ -27,14 +29,20 @@ export const metadata: Metadata = {
   },
 };
 
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }));
+}
+
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
     <html
-      lang='pt-br'
+      lang={locale}
       className={`${poppins.variable} ${manrope.variable} ${montserrat.variable} ${barlow.variable}`}
       suppressHydrationWarning
     >

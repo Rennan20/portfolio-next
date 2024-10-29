@@ -3,6 +3,7 @@
 const nextConfig = {
   env: {
     api_url: process.env.API_URL,
+    metadataUrl: process.env.NEXT_PUBLIC_METADATA_BASE,
   },
   images: {
     remotePatterns: [
