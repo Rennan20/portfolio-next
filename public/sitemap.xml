@@ -4,7 +4,8 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"> <!-- Adicionei o namespace xhtml aqui -->
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <xhtml:link rel="alternate" hreflang="en" href="https://portfolio-five-xi-38.vercel.app/en" />
