@@ -2,11 +2,14 @@
 
 import Link from 'next/link';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Icon } from './Icons';
 import { SocialIcon } from './SocialIcon';
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <header className='sticky top-2 z-20 mx-auto flex max-w-7xl items-start justify-between xl:items-center'>
       <div className='flex flex-row items-center'>
@@ -29,7 +32,7 @@ export const Header = () => {
         <div className='flex cursor-pointer flex-row items-center space-x-2 text-gray-300'>
           <Icon.Mail className='h-6 w-6 text-gray-400' />
           <p className='hidden text-sm uppercase text-gray-400 md:inline-flex'>
-            Entre em Contato!
+            {t('contato')}
           </p>
         </div>
       </Link>

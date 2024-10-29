@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   env: {
     api_url: process.env.API_URL,
@@ -6,12 +7,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "i.imgur.com",
+        protocol: 'https',
+        hostname: 'i.imgur.com',
       },
       {
-        protocol: "https",
-        hostname: "imgur.com",
+        protocol: 'https',
+        hostname: 'imgur.com',
       },
     ],
   },

@@ -1,0 +1,68 @@
+{
+  "titulo": "Sobre Mim",
+  "descrição": "Olá, sou Rennan, desenvolvedor web especializado em tecnologias front-end. Com uma sólida experiência na criação de interfaces intuitivas e funcionais, já desenvolvi soluções que vão desde CRMs customizados até landing pages de alta performance. Sempre aprimorando minhas habilidades, com destaque para o frontend, utilizando frameworks modernos. Meus projetos, construídos com ferramentas como Strapi, Prisma, Docker e PostgreSQL, refletem meu compromisso em entregar produtos de qualidade, focados na experiência do usuário e na eficiência do código.",
+  "links": "Possuo formação complementar por meio de plataformas como",
+  "plataformas": [
+    {
+      "titulo": "W3SCHOOLS"
+    },
+    {
+      "titulo": "B7WEB."
+    }
+  ],
+  "certificados": [
+    { "titulo": "Alguns dos meus certificados:" },
+    {
+      "css": "Certificado CSS da Scaler"
+    },
+    {
+      "html": "Certificado HTML da Scaler"
+    },
+    { "javascript": "Certificado JavaScript da Scaler" }
+  ],
+  "stack": "tecnologias",
+  "templates": {
+    "texto": "Templates de sites profissionais que demonstram meu estilo de trabalho e podem inspirar projetos para atender às suas necessidades"
+  },
+  "projetos": {
+    "titulo": "Projetos",
+    "texto": "Navegue por uma seleção dos meus melhores projetos"
+  },
+  "contatos": {
+    "titulo": "Contato",
+    "sobre": "Eu tenho tudo que você precisa.",
+    "formulario": {
+      "nome": "Nome",
+      "assunto": "Assunto",
+      "email": "Email",
+      "mensagem": "Mensagem",
+      "enviar": "Enviar"
+    }
+  },
+  "contato": "Entre em contato!",
+  "menu": {
+    "sobre": "sobre",
+    "projetos": "projetos",
+    "stack": "tecnologias",
+    "contato": "contato"
+  },
+  "skills": {
+    "vscode": "Editor de código preferido, usado para desenvolver todos os meus projetos com extensões customizadas.",
+    "html5": "Fundamental para estruturação de páginas web. Utilizo HTML5 em todos os meus projetos.",
+    "css3": "Criação de layouts responsivos e modernos. Utilizo CSS3 com TailwindCSS e Styled Components.",
+    "javascript": "Linguagem de programação principal para desenvolvimento frontend, utilizando ES6+.",
+    "react": "Framework principal para construção de UIs interativas e reutilizáveis.",
+    "next": "Framework React utilizado para criação de sites rápidos e otimizados com server-side rendering (SSR).",
+    "typescript": "Utilizo TypeScript para adicionar tipagem estática ao JavaScript, evitando erros e melhorando a manutenção do código.",
+    "node": "Utilizo Node.js para construção de APIs escaláveis e rápidas no backend.",
+    "firebase": "Utilizo Firebase para autenticação e armazenamento de dados em tempo real.",
+    "git": "Controle de versão e colaboração em projetos com Git e GitHub.",
+    "docker": "Containerização de ambientes de desenvolvimento para maior consistência entre máquinas.",
+    "sanity": "CMS headless utilizado para gerenciar conteúdo dinâmico e flexível.",
+    "metamask": "Integração com blockchain e projetos Web3.",
+    "postman": "Ferramenta utilizada para teste e documentação de APIs.",
+    "jenkins": "Ferramenta de automação para CI/CD, usada para integração e deploy contínuos.",
+    "database": "Experiência com bancos de dados relacionais e não-relacionais, como PostgreSQL e Firebase, para gerenciamento de dados.",
+    "zustand": "Gerenciamento de estado leve e eficiente em aplicações React, ideal para situações onde a simplicidade é prioridade."
+  }
+}

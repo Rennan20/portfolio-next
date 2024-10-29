@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 import {
   Tooltip,
@@ -12,10 +13,12 @@ import {
 import { skills } from '../utils/mockedData/Skill';
 
 export const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly space-y-20 overflow-hidden text-left'>
       <h2 className='absolute top-24 hidden text-2xl uppercase tracking-[20px] text-gray-500 md:block'>
-        Tecnologias
+        {t('stack')}
       </h2>
       <div className='grid grid-cols-4 gap-2 md:grid-cols-5'>
         {skills.map((skill) => (
@@ -28,11 +31,12 @@ export const Skills = () => {
                     alt={skill.alt}
                     width={60}
                     height={60}
-                    className='size-16 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
+                    priority
+                    className='size-16 rounded-full  object-cover shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
                   />
                 </TooltipTrigger>
                 <TooltipContent className='z-50 rounded-md bg-gray-100 p-2 text-sm text-black shadow-lg'>
-                  <p>{skill.description}</p>
+                  <p>{t(`skills.${skill.description.split('.').pop()}`)}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

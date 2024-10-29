@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<xhtml:link rel="alternate" hreflang="en" href="https://portfolio-five-xi-38.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://portfolio-five-xi-38.vercel.app/pt-BR" />
+
+<url>
+  <loc>https://portfolio-five-xi-38.vercel.app/</loc>
+  <lastmod>2024-10-29T13:54:02+00:00</lastmod>
+  <image:image>
+      <image:loc>https://portfolio-five-xi-38.vercel.app/assets/POG.png</image:loc>
+      <image:caption>Print da página inicial do portfólio de Rennan Silva.</image:caption>
+      <image:title>Página Inicial do Portfólio</image:title>
+  </image:image>
+</url>
+
+</urlset>

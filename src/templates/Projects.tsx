@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { NavigationButtons } from '@/components/NavigationSwiper';
 import { ProjectCard } from '@/components/ProjectCard';
@@ -14,6 +15,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 export const Projects = () => {
+  const { t } = useTranslation();
+
   const { data: projects, isLoading, isError } = RepositoryProjects();
 
   const sliderRef = useRef<SwiperRef>(null);
@@ -30,10 +33,10 @@ export const Projects = () => {
   return (
     <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'>
       <h3 className='font-roboto absolute top-24 px-2 text-2xl uppercase tracking-[20px] text-gray-500'>
-        Projetos
+        {t('projetos.titulo')}
       </h3>
       <p className='font-fira absolute top-36 px-2 text-sm uppercase text-white'>
-        Navegue por uma seleção dos meus melhores projetos
+        {t('projetos.texto')}
       </p>
       <Swiper
         ref={sliderRef}

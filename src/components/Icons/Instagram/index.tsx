@@ -38,7 +38,7 @@ export const IconInstagram: FC<SVGAttributes<HTMLOrSVGElement>> = () => {
         gradientUnits='userSpaceOnUse'
       >
         <stop offset='0' stopColor='#4168c9'></stop>
-        <stop offset='.999' stopColor='#4168c9' stop-opacity='0'></stop>
+        <stop offset='.999' stopColor='#4168c9' stopOpacity='0'></stop>
       </radialGradient>
       <path
         fill='url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)'

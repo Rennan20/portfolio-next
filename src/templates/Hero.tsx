@@ -2,11 +2,14 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 import { BackgroundCircles } from '@/components/BackgroundCircles';
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   const [text] = useTypewriter({
     words: [
       `Hi, The Name's Rennan Silva`,
@@ -25,6 +28,7 @@ export const Hero = () => {
         height={128}
         className='relative mx-auto size-32 rounded-full object-cover'
         src='/profile-pic.jpg'
+        priority
       />
       <div className='z-20'>
         <h2 className='pb-[0.5rem] text-sm uppercase tracking-[0.938rem] text-gray-500'></h2>
@@ -34,16 +38,16 @@ export const Hero = () => {
         </h1>
         <div className='pt-[1.25rem]'>
           <Link href='#about'>
-            <button className='heroButton'>Sobre</button>
+            <button className='heroButton'>{t('menu.sobre')}</button>
           </Link>
           <Link href='#skills'>
-            <button className='heroButton'>Stack</button>
+            <button className='heroButton'>{t('menu.stack')}</button>
           </Link>
           <Link href='#projects'>
-            <button className='heroButton'>Projetos</button>
+            <button className='heroButton'>{t('menu.projetos')}</button>
           </Link>
           <Link href='#contact'>
-            <button className='heroButton'>Contato</button>
+            <button className='heroButton'>{t('menu.contato')}</button>
           </Link>
         </div>
       </div>

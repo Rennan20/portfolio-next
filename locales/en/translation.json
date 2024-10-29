@@ -1,0 +1,72 @@
+{
+  "titulo": "About Me",
+  "descrição": "Hello, I'm Rennan, a web developer specializing in front-end technologies. With solid experience in creating intuitive and functional interfaces, I've developed solutions ranging from custom CRMs to high-performance landing pages. I am continually improving my skills, particularly in front-end development, using modern frameworks. My projects, built with tools like Strapi, Prisma, Docker, and PostgreSQL, reflect my commitment to delivering quality products that focus on user experience and code efficiency.",
+  "links": "I have completed complementary training through platforms such as",
+  "plataformas": [
+    {
+      "titulo": "W3SCHOOLS"
+    },
+    {
+      "titulo": "B7WEB."
+    }
+  ],
+  "certificados": [
+    {
+      "titulo": "Some of my certificates:"
+    },
+    {
+      "CSS": "CSS Certificate from Scaler"
+    },
+    {
+      "HTML": "HTML Certificate from Scaler"
+    },
+    {
+      "JavaScript": "JavaScript Certificate from Scaler"
+    }
+  ],
+  "stack": "technologies",
+  "templates": {
+    "texto": "Professional website templates that showcase my work style and can inspire projects to meet your needs."
+  },
+  "projetos": {
+    "titulo": "Projects",
+    "texto": "Browse through a selection of my best projects."
+  },
+  "contatos": {
+    "titulo": "Contact",
+    "sobre": "I have everything you need.",
+    "formulario": {
+      "nome": "Name",
+      "assunto": "Subject",
+      "email": "Email",
+      "mensagem": "Message",
+      "enviar": "Send"
+    }
+  },
+  "contato": "Get in touch!",
+  "menu": {
+    "sobre": "about",
+    "projetos": "projects",
+    "stack": "technologies",
+    "contato": "contact"
+  },
+  "skills": {
+    "vscode": "Preferred code editor, used to develop all my projects with customized extensions.",
+    "html5": "Fundamental for structuring web pages. I use HTML5 in all my projects.",
+    "css3": "Creation of responsive and modern layouts. I use CSS3 with TailwindCSS and Styled Components.",
+    "javascript": "Primary programming language for frontend development, utilizing ES6+.",
+    "react": "Main framework for building interactive and reusable UIs.",
+    "next": "React framework used to create fast and optimized websites with server-side rendering (SSR).",
+    "typescript": "I use TypeScript to add static typing to JavaScript, preventing errors and improving code maintenance.",
+    "node": "I use Node.js to build scalable and fast APIs on the backend.",
+    "firebase": "I use Firebase for authentication and real-time data storage.",
+    "git": "Version control and project collaboration with Git and GitHub.",
+    "docker": "Containerization of development environments for greater consistency across machines.",
+    "sanity": "Headless CMS used to manage dynamic and flexible content.",
+    "metamask": "Integration with blockchain and Web3 projects.",
+    "postman": "Tool used for API testing and documentation.",
+    "jenkins": "Automation tool for CI/CD, used for continuous integration and deployment.",
+    "database": "Experience with relational and non-relational databases, such as PostgreSQL and Firebase, for data management.",
+    "zustand": "Lightweight and efficient state management in React applications, ideal for situations where simplicity is a priority."
+  }
+}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { NavigationButtons } from '@/components/NavigationSwiper';
 import { ProjectCard } from '@/components/ProjectCard';
@@ -14,6 +15,8 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 
 export const Templates = () => {
+  const { t } = useTranslation();
+
   const { data: templates, isLoading, isError } = RepositoryTemplates();
 
   const sliderRef = useRef<SwiperRef>(null);
@@ -34,8 +37,7 @@ export const Templates = () => {
       </h3>
 
       <p className='font-fira absolute top-36 px-2 text-sm uppercase text-white'>
-        Templates de sites profissionais que demonstram meu estilo de trabalho e
-        podem inspirar projetos para atender às suas necessidades
+        {t('templates.texto')}
       </p>
 
       <Swiper
