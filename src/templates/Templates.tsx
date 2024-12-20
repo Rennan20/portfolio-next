@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 
 import { NavigationButtons } from '@/components/NavigationSwiper';
 import { ProjectCard } from '@/components/ProjectCard';
+import { templates } from '@/utils/mockedData/Template';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import { RepositoryTemplates } from '@/repositories/RepositoryTemplates';
 import { Swiper as SwiperClass } from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
@@ -17,18 +17,14 @@ import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 export const Templates = () => {
   const { t } = useTranslation();
 
-  const { data: templates, isLoading, isError } = RepositoryTemplates();
-
   const sliderRef = useRef<SwiperRef>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const [realIndex, setRealIndex] = useState(0);
   const [isEnd, setIsEnd] = useState(false);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (isError) return <p>Erro ao carregar os templates</p>;
-
-  if (!templates) return <p>Nenhum template disponível.</p>;
+  if (!templates || templates.length === 0)
+    return <p>Nenhum template disponível.</p>;
 
   return (
     <div className='relative z-0 mx-auto flex h-screen flex-col items-center justify-evenly overflow-hidden text-left'>
@@ -71,7 +67,7 @@ export const Templates = () => {
         className='w-full items-center'
       >
         {templates.map((template) => (
-          <SwiperSlide key={template.id}>
+          <SwiperSlide key={template.type}>
             <ProjectCard project={template} />
           </SwiperSlide>
         ))}

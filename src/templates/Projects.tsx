@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { NavigationButtons } from '@/components/NavigationSwiper';
 import { ProjectCard } from '@/components/ProjectCard';
-import { RepositoryProjects } from '@/repositories/RepositoryProjects';
+import { projects } from '@/utils/mockedData/Project';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 
@@ -17,18 +17,11 @@ import 'swiper/css/autoplay';
 export const Projects = () => {
   const { t } = useTranslation();
 
-  const { data: projects, isLoading, isError } = RepositoryProjects();
-
   const sliderRef = useRef<SwiperRef>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const [realIndex, setRealIndex] = useState(0);
   const [isEnd, setIsEnd] = useState(false);
-
-  if (isLoading) return <p>Loading...</p>;
-  if (isError) return <p>Erro ao carregar os projetos</p>;
-
-  if (!projects) return <p>Nenhum projeto disponível.</p>;
 
   return (
     <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'>
@@ -69,7 +62,7 @@ export const Projects = () => {
         className='w-full items-center'
       >
         {projects.map((project) => (
-          <SwiperSlide key={project.id}>
+          <SwiperSlide key={project.type}>
             <ProjectCard project={project} />
           </SwiperSlide>
         ))}
