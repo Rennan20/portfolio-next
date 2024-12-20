@@ -1,5 +1,4 @@
 export type ProjectType = {
-  id: number;
   src: string;
   alt: string;
   name: string;
@@ -8,4 +7,4 @@ export type ProjectType = {
   type: number;
 };
 
-export type Inputs = Record<"name" | "email" | "subject" | "message", string>;
+export type Inputs = Record<'name' | 'email' | 'subject' | 'message', string>;
